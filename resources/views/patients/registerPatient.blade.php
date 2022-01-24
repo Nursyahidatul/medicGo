@@ -117,8 +117,8 @@
             <br>
             <button class="btn btn-block btn-primary" type="submit">Register</button>
           </div>
-          <br>
-          <a href="login">Already Register!! Login Here</a>
+          <button class="btn btn-block btn-primary"><a href="login">Already register? Login Here</a></button>
+          
         </form>
       </div>
     </div>

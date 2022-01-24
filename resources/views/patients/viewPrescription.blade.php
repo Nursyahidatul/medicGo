@@ -81,11 +81,13 @@
   <section class="section doctors">
     <div class="container">
       <div class="row justify-content-center">
-        <table id ="confirm" style="border: 1px solid black;">
+        <table id ="confirm" style="border: 1px solid black; width: 100%">
           <tr>
-            <th style="border: 1px solid black;">Patient Name</th>
-            <th style="border: 1px solid black;">Prescription</th>
-            <th style="border: 1px solid black;">Valid until</th>
+            <th style="border: 1px solid black; text-align: center">Patient Name</th>
+            <th style="border: 1px solid black; text-align: center">Prescription</th>
+            <th style="border: 1px solid black; text-align: center">Valid until</th>
+            <th style="border: 1px solid black; text-align: center">QR code</th>
+            <th style="border: 1px solid black; text-align: center">Generated</th>
           </tr>
           @foreach($prescriptions as $prescriptions)
           <tr>

@@ -85,7 +85,7 @@
     <section class="section doctors">
         <div class="container">
             <div class="row justify-content-center">
-                <table id="profile">
+                <table id="profile" style="width:50%">
                     <tr>
                         <th>Name</th>
                         <td>{{ $data->patientname }}</td>

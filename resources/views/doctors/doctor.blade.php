@@ -81,16 +81,6 @@
 	<!-- portfolio -->
 	<section class="section doctors">
 		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-6 text-center">
-					<div class="section-title">
-						<h2>Doctors</h2>
-						<div class="divider mx-auto my-4"></div>
-						<p>We provide a wide range of creative services adipisicing elit. Autem maxime rem modi eaque, voluptate. Beatae officiis neque </p>
-					</div>
-				</div>
-			</div>
-
 			<div class="col-12 text-center  mb-5">
 				<div class="btn-group btn-group-toggle " data-toggle="buttons">
 					<label class="btn active ">

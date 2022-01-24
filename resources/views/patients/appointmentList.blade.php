@@ -81,14 +81,14 @@
   <section class="section doctors">
     <div class="container">
       <div class="row justify-content-center">
-        <table id ="confirm" style="border: 1px solid black;">
+        <table id ="confirm" style="border: 1px solid black; width: 100%; border: 5px solid dark">
           <tr>
-            <th style="border: 1px solid black;">Full Name</th>
-            <th style="border: 1px solid black;">Doctor Name</th>
-            <th style="border: 1px solid black;"> Date</th>
-            <th style="border: 1px solid black;">Time</th>
-            <th style="border: 1px solid black;">Symptoms</th>
-            <th style="border: 1px solid black;">Link</th>
+            <th style="border: 1px solid black; text-align: center;">Full Name</th>
+            <th style="border: 1px solid black; text-align: center;">Doctor Name</th>
+            <th style="border: 1px solid black; text-align: center;"> Date</th>
+            <th style="border: 1px solid black; text-align: center;">Time</th>
+            <th style="border: 1px solid black; text-align: center;">Symptoms</th>
+            <th style="border: 1px solid black; text-align: center;">Link</th>
           </tr>
           @foreach($appointments as $appointment)
           <tr>

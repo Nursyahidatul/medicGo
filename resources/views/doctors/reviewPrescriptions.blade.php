@@ -26,10 +26,10 @@
 
 <body id="top">
 
-  <header>
+<header>
     <nav class="navbar navbar-expand-lg navigation" id="navbar">
       <div class="container">
-        <a class="navbar-brand" href="{{ asset('/dashboardPatient') }}">
+        <a class="navbar-brand" href="{{ asset('/dashboardDoctor') }}">
           <h1 style="color:DodgerBlue;"><b>MedicGO</b></h1>
         </a>
 
@@ -40,31 +40,29 @@
         <div class="collapse navbar-collapse" id="navbarmain">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="{{ asset('/profilePatient')}}">Profile</a>
+              <a class="nav-link" href="{{asset('/profileDoctor')}}">Profile</a>
             </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Appointment <i class="icofont-thin-down"></i></a>
+              <a class="nav-link dropdown-toggle" href="department.html" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Patient<i class="icofont-thin-down"></i></a>
               <ul class="dropdown-menu" aria-labelledby="dropdown02">
-                <li><a class="dropdown-item" href="{{ asset('/appointmentList')}}">Appointment</a></li>
-                <li><a class="dropdown-item" href="{{ asset('/doctor')}}">Booking Appointment</a></li>
+                <li><a class="dropdown-item" href="{{asset('/patientList')}}">Patient List</a></li>
               </ul>
             </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Prescription <i class="icofont-thin-down"></i></a>
+              <a class="nav-link dropdown-toggle" href="doctor.html" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Prescription <i class="icofont-thin-down"></i></a>
               <ul class="dropdown-menu" aria-labelledby="dropdown03">
                 <li><a class="dropdown-item" href="{{ asset('/reviewPrescriptions') }}">Prescription List</a></li>
                 <li><a class="dropdown-item" href="{{asset('/prescription')}}">Prescription</a></li>
               </ul>
             </li>
-            <li class="nav-item"><a class="nav-link" href="{{ asset('/logout') }}">Logout</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ asset('/dashboard') }}">Logout</a></li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
-
   <section class="page-title bg-1">
     <div class="overlay"></div>
     <div class="container">
@@ -72,7 +70,7 @@
         <div class="col-md-12">
           <div class="block text-center">
             <span class="text-white">View your </span>
-            <h1 class="text-capitalize mb-5 text-lg">Prescriptions/h1>
+            <h1 class="text-capitalize mb-5 text-lg">Prescriptions</h1>
           </div>
         </div>
       </div>
@@ -82,13 +80,13 @@
   <section class="section doctors">
     <div class="container">
       <div class="row justify-content-center">
-        <table id= "confirm" style="border: 1px solid black;">
+        <table id= "confirm" style="border: 1px solid black; width: 100%">
           <tr>
-            <th style="border: 1px solid black;">Patient ID</th>
-            <th style="border: 1px solid black;">time</th>
-            <th style="border: 1px solid black;">appointment ID</th>
-            <th style="border: 1px solid black;">symptoms</th>
-            <th style="border: 1px solid black;">validation</th>
+            <th style="border: 1px solid black; text-align: center">Patient ID</th>
+            <th style="border: 1px solid black; text-align: center">time</th>
+            <th style="border: 1px solid black; text-align: center">appointment ID</th>
+            <th style="border: 1px solid black; text-align: center">symptoms</th>
+            <th style="border: 1px solid black; text-align: center">validation</th>
           </tr>
           @foreach($prescriptions as $prescription)
           <tr>

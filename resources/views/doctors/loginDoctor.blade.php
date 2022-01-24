@@ -80,8 +80,7 @@
               <br>
               <button class="btn btn-block btn-primary" type="submit">Login</button>
             </div>
-            <br>
-            <a href="registration1">New User!! Register Here</a>
+            <button class="btn btn-block btn-primary"><a href="registration1">New User? Register here</a></button>
           </form>
         </form>
       </div>

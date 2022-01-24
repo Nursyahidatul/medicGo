@@ -71,7 +71,7 @@
         <div class="col-md-12">
           <div class="block text-center">
             <span class="text-white">Create a </span>
-            <h1 class="text-capitalize mb-5 text-lg">Prescription</h1>
+            <h1 class="text-capitalize mb-5 text-lg">Prescriptions</h1>
           </div>
         </div>
       </div>
@@ -84,8 +84,6 @@
         <div class="col-lg-8">
           <div class="appoinment-wrap mt-5 mt-lg-0 pl-lg-5">
             <h2 class="mb-2 title-color">Prescription</h2>
-            <p class="mb-4">Mollitia dicta commodi est recusandae iste, natus eum asperiores corrupti qui velit . Iste dolorum atque similique praesentium soluta.</p>
-
             <form action="{{route('prescriptionSet')}}" method="post">
               @csrf
               <div class="row">

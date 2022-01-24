@@ -71,7 +71,7 @@
         <div class="col-md-12">
           <div class="block text-center">
             <span class="text-white">Book your </span>
-            <h1 class="text-capitalize mb-5 text-lg">Appointment</h1>
+            <h1 class="text-capitalize mb-5 text-lg">Video Consultation Appointment</h1>
           </div>
         </div>
       </div>
@@ -84,7 +84,7 @@
         <div class="col-lg-8">
           <div class="appoinment-wrap mt-5 mt-lg-0 pl-lg-5">
             <h2 class="mb-2 title-color">Book an appointment</h2>
-            <p class="mb-4">Mollitia dicta commodi est recusandae iste, natus eum asperiores corrupti qui velit . Iste dolorum atque similique praesentium soluta.</p>
+            <p class="mb-4">We are delighted and very proud to present to you the latest version of our <b>Video Consultation</b>. Using cutting edge technologies, it allows you to speak to and consult with our healthcare professionals in real-time.</p>
 
             <form action="{{route('appointment-set')}}" method="post">
               @if(Session::has('success'))

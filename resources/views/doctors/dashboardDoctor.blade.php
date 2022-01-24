@@ -64,9 +64,6 @@
 		</nav>
 	</header>
 
-
-
-
 	<!-- Slider Start -->
 	<section class="banner">
 		<div class="container">
@@ -75,9 +72,9 @@
 					<div class="block">
 						<div class="divider mb-3"></div>
 						<span class="text-uppercase text-sm letter-spacing ">Welcome to MedicGO DR {{$data->doctorname}}</span>
-						<h1 class="mb-3 mt-3">Your most trusted health partner</h1>
+						<h1 class="mb-3 mt-3">Introducing health video consultation</h1>
 
-						<p class="mb-4 pr-5">A repudiandae ipsam labore ipsa voluptatum quidem quae laudantium quisquam aperiam maiores sunt fugit, deserunt rem suscipit placeat.</p>
+						<p class="mb-4 pr-5">Fastest and easiest way to consult a doctor from the comfort of your home</p>
 					</div>
 				</div>
 			</div>
@@ -95,7 +92,6 @@
 							<span>24 Hours Service</span>
 							<h4 class="mb-3">Online Appoinment</h4>
 							<p class="mb-4">Get ALl time support for emergency.We have introduced the principle of family medicine.</p>
-							<a href="appoinment.html" class="btn btn-main btn-round-full">Make a appoinment</a>
 						</div>
 
 						<div class="feature-item mb-5 mb-lg-0">

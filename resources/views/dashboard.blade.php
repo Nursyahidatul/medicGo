@@ -46,9 +46,9 @@
 				<div class="block">
 					<div class="divider mb-3"></div>
 					<span class="text-uppercase text-sm letter-spacing ">Welcome to MedicGO</span>
-					<h1 class="mb-3 mt-3">Your most trusted health partner</h1>
+					<h1 class="mb-3 mt-3">Introducing health video consultation</h1>
 					
-					<p class="mb-4 pr-5">A repudiandae ipsam labore ipsa voluptatum quidem quae laudantium quisquam aperiam maiores sunt fugit, deserunt rem suscipit placeat.</p>
+					<p class="mb-4 pr-5">Fastest and easiest way to consult a doctor from the comfort of your home</p>
 					<div class="btn-container ">
 						<a href="{{ asset('/login') }}" target="_blank" class="btn btn-main-2 btn-icon btn-round-full"> Log In Patient <i class="icofont-simple-right ml-2  "></i></a><br><br>
 						<a href="{{ asset('/login1') }}" target="_blank" class="btn btn-main-2 btn-icon btn-round-full"> Log In Doctor <i class="icofont-simple-right ml-2  "></i></a>
@@ -71,7 +71,7 @@
 						<span>24 Hours Service</span>
 						<h4 class="mb-3">Online Appoinment</h4>
 						<p class="mb-4">Get ALl time support for emergency.We have introduced the principle of family medicine.</p>
-						<a href="appoinment.html" class="btn btn-main btn-round-full">Make a appoinment</a>
+						<a href="{{ asset('/login') }}" class="btn btn-main btn-round-full">Make a appoinment</a>
 					</div>
 				
 					<div class="feature-item mb-5 mb-lg-0">

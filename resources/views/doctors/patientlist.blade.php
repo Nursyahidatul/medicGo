@@ -26,7 +26,7 @@
 
 <body id="top">
 
-  <header>
+<header>
     <nav class="navbar navbar-expand-lg navigation" id="navbar">
       <div class="container">
         <a class="navbar-brand" href="{{ asset('/dashboardDoctor') }}">
@@ -57,7 +57,7 @@
                 <li><a class="dropdown-item" href="{{asset('/prescription')}}">Prescription</a></li>
               </ul>
             </li>
-            <li class="nav-item"><a class="nav-link" href="{{ asset('/logout') }}">Logout</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ asset('/dashboard') }}">Logout</a></li>
           </ul>
         </div>
       </div>
@@ -71,12 +71,6 @@
         <div class="col-md-12">
           <div class="block text-center">
             <h1 class="text-capitalize mb-5 text-lg">Patient List</h1>
-
-            <!-- <ul class="list-inline breadcumb-nav">
-            <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
-            <li class="list-inline-item"><span class="text-white">/</span></li>
-            <li class="list-inline-item"><a href="#" class="text-white-50">All Doctors</a></li>
-          </ul> -->
           </div>
         </div>
       </div>
@@ -86,19 +80,19 @@
   <section class="section doctors">
     <div class="container">
       <div class="row justify-content-center">
-        <table id = "confirm" style="border: 1px solid black;">
+        <table id = "confirm" style="border: 1px solid black; width: 100%;">
           <form action="" method="">
 
           </form>
           <tr>
-            <th style="border: 1px solid black;">Appointment ID</th>
-            <th style="border: 1px solid black;">Patient Name</th>
-            <th style="border: 1px solid black;">Patient ID</th>
-            <th style="border: 1px solid black;">Date</th>
-            <th style="border: 1px solid black;">Time</th>
-            <th style="border: 1px solid black;">Symptoms</th>
-            <th style="border: 1px solid black;">Link</th>
-            <th style="border: 1px solid black;"></th>
+            <th style="border: 1px solid black; text-align: center;">Appointment ID</th>
+            <th style="border: 1px solid black; text-align: center;">Patient Name</th>
+            <th style="border: 1px solid black; text-align: center;">Patient ID</th>
+            <th style="border: 1px solid black; text-align: center;">Date</th>
+            <th style="border: 1px solid black; text-align: center;">Time</th>
+            <th style="border: 1px solid black; text-align: center;">Symptoms</th>
+            <th style="border: 1px solid black; text-align: center;">Link</th>
+            <th style="border: 1px solid black; text-align: center;">Update</th>
           </tr>
           @foreach($appointments as $appointment)
           <tr>

@@ -64,7 +64,6 @@
     </nav>
   </header>
 
-
   <section class="page-title bg-1">
     <div class="overlay"></div>
     <div class="container">
@@ -72,83 +71,59 @@
         <div class="col-md-12">
           <div class="block text-center">
             <h1 class="text-capitalize mb-5 text-lg">Profile</h1>
-
-            <!-- <ul class="list-inline breadcumb-nav">
-            <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
-            <li class="list-inline-item"><span class="text-white">/</span></li>
-            <li class="list-inline-item"><a href="#" class="text-white-50">All Doctors</a></li>
-          </ul> -->
           </div>
         </div>
       </div>
     </div>
   </section>
 
-
-
   <!-- portfolio -->
   <section class="section doctors">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-lg-6 text-center">
-          <div class="section-title">
-            <h2>{{$data->doctorname}}</h2>
-            <div class="divider mx-auto my-4"></div>
-            <p>We provide a wide range of creative services adipisicing elit. Autem maxime rem modi eaque, voluptate. Beatae officiis neque </p>
-          </div>
-        </div>
-        </div>
-        </div>
-        <div class="container">
-      <div class="row justify-content-center">
-        <table id ="profile">
+        <table id="profile" style="width:50%">
           <tr>
             <th>Name</th>
-            <td>{{$data->doctorname}}</td>
+            <td>{{ $data->doctorname }}</td>
           </tr>
           <tr>
             <th>Email</th>
-            <td>{{$data->email}}</td>
+            <td>{{ $data->email }}</td>
+          </tr>
+          <tr>
+            <th>Speciality</th>
+            <td>{{ $data->speciality }}</td>
           </tr>
           <tr>
             <th>Phone Number</th>
-            <td>{{$data->phonenumber}}</td>
+            <td>{{ $data->phonenumber }}</td>
           </tr>
           <tr>
             <th>Age</th>
-            <td>{{$data->age}}</td>
+            <td>{{ $data->age }}</td>
           </tr>
           <tr>
             <th>Gender</th>
-            <td>{{$data->gender}}</td>
-          </tr>
-          
-
-          <tr>
-            <th>Speciality</th>
-            <td>{{$data->speciality}}</td>
+            <td>{{ $data->gender}}</td>
           </tr>
           <tr>
             <th>Address</th>
-            <td>{{$data->address}}</td>
+            <td>{{ $data->address }}</td>
           </tr>
           <br>
-
         </table>
-        </div>
-        </div>
-        </div>
+      </div>
       <form id="#" class="appoinment-form" method="post" action="#">
         <div class="row justify-content-center">
 
+          <a class="btn btn-main btn-round-full" href="">Update Profile<i class="icofont-simple-right ml-2"></i></a>
 
-            <a class="btn btn-main btn-round-full" href="confirmation.html">Update Profile<i class="icofont-simple-right ml-2"></i></a><br><br>
-            <a class="btn btn-main btn-round-full" href="confirmation.html">Delete Profile<i class="icofont-simple-right ml-2"></i></a><br>
-            </div>
+
+        </div>
       </form>
 
     </div>
-
+    </div>
     </div>
     </div>
   </section>

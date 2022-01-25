@@ -6,7 +6,6 @@ use App\Models\Doctor;
 use App\Models\Patient;
 use App\Models\Prescriptions;
 use Illuminate\Http\Request;
-use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
 class PrescriptionsController extends Controller
 {
@@ -59,8 +58,6 @@ class PrescriptionsController extends Controller
             $data = Patient::where('id', '=', 'Session'::get('LoginId'))->first();
         }
         $prescriptions = Prescriptions::where('patientID', $data->id)->get();
-        
-        $qrcode = QrCode::size(150)->generate(Prescriptions::where('patientID', $data->id)->value('prescription')); //dekat sini
-        return view("patients.viewPrescription", compact(['data', 'prescriptions', 'qrcode']));
+        return view("patients.viewPrescription", compact(['data', 'prescriptions']));
     }
 }

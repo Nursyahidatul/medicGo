@@ -6,7 +6,7 @@
   <meta name="description" content="Orbitor,business,company,agency,modern,bootstrap4,tech,software">
   <meta name="author" content="themefisher.com">
 
-  <title>Appointment List</title>
+  <title>Prescription List</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="{{ asset('/images/favicon.ico') }}">
@@ -71,7 +71,7 @@
         <div class="col-md-12">
           <div class="block text-center">
             <span class="text-white">View your </span>
-            <h1 class="text-capitalize mb-5 text-lg">Appointment</h1>
+            <h1 class="text-capitalize mb-5 text-lg">prescription</h1>
           </div>
         </div>
       </div>
@@ -81,31 +81,30 @@
   <section class="section doctors">
     <div class="container">
       <div class="row justify-content-center">
-        <table id ="confirm" style="border: 1px solid black; width: 100%; border: 5px solid dark">
+        <table id="confirm" style="border: 1px solid black; width: 100%">
           <tr>
-            <th style="border: 1px solid black; text-align: center;">Appointment ID</th>
-            <th style="border: 1px solid black; text-align: center;">Patient Name</th>
-            <th style="border: 1px solid black; text-align: center;">Doctor Name</th>
-            <th style="border: 1px solid black; text-align: center;"> Date</th>
-            <th style="border: 1px solid black; text-align: center;">Time</th>
-            <th style="border: 1px solid black; text-align: center;">Symptoms</th>
-            <th style="border: 1px solid black; text-align: center;">Link</th>
+          @foreach($prescriptions as $prescriptions)
+            <th style="border: 1px solid black; text-align: center">Symptoms</th>
+            <th style="border: 1px solid black; text-align: center">Prescription</th>
+            <th style="border: 1px solid black; text-align: center">Validation</th>
+            <th style="border: 1px solid black; text-align: center">QR code</th>
           </tr>
-          @foreach($appointments as $appointment)
           <tr>
-            <td style="border: 1px solid black;">{{ $appointment->id }}</td>
-            <td style="border: 1px solid black;">{{ $appointment->patientname }}</td>
-            <td style="border: 1px solid black;">{{ $appointment->doctorname }}</td>
-            <td style="border: 1px solid black;">{{ $appointment->date }}</td>
-            <td style="border: 1px solid black;">{{ $appointment->time }}</td>
-            <td style="border: 1px solid black;">{{ $appointment->symptoms }}</td>
-            <td style="border: 1px solid black;">{{ $appointment->link }}</td>
-          </tr><br>
+            <td style="border: 1px solid black;">{{$prescriptions->symptoms}}</td>
+            <td style="border: 1px solid black;">{{$prescriptions->prescription}}</td>
+            <td style="border: 1px solid black;">{{$prescriptions->validation}}</td>
+            <td style="border: 1px solid black; text-align: center">{{$qrcode}}</td>
+          </tr>
           @endforeach
+          <br>
         </table>
       </div>
+      <form id="#" class="appoinment-form" method="post" action="#"></form>
     </div>
   </section>
+
+
+
 
 </body>
 

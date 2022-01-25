@@ -4,7 +4,9 @@ use App\Http\Controllers\PatientController;
 use App\Http\Controllers\DoctorController;
 use App\Http\Controllers\AppointmentsController;
 use App\Http\Controllers\PrescriptionsController;
+use App\Http\Controllers\qrcodeController;
 use App\Http\Controllers\QrCodeGeneratorController;
+use App\Http\Controllers\CodeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('dashboard');
 });
 
 //Route::resource('patients', 'App\http\Controllers\PatientController');
@@ -62,7 +64,11 @@ Route::get('/reviewPrescriptions',[PrescriptionsController::class,'reviewPrescri
 Route::get('/viewPrescriptions',[PrescriptionsController::class,'viewPrescriptions']);
 
 //Route::resource('qrcode', 'App\http\Controllers\QrCodeController');
-Route::get('/qr-code', [QrCodeGeneratorController::class, 'qrcode']);
+//Route::get('/qr-code', [qrcodeController::class, 'qrcode']);
+//Route::post('/displayqrcode',[qrcodeController::class,'displayqrcode'])->name('displayqrcode');
+
+Route::post('/saveqrcode',[CodeController::class,'saveqrcode'])->name('saveqrcode');
+Route::get('/viewqrcode',[CodeController::class,'viewqrcode']);
 
 
 

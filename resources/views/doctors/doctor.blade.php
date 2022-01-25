@@ -108,25 +108,25 @@
 			</div>
 
 			<div class="row shuffle-wrapper portfolio-gallery">
-					@foreach($doctor as $doctors)
-					<div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;cat1&quot;,&quot;cat2&quot;]">
-						<div class="position-relative doctor-inner-box">
-						
+				@foreach($doctor as $doctors)
+				<div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;cat1&quot;,&quot;cat2&quot;]">
+					<div class="position-relative doctor-inner-box">
+
 						<!--Display Doctor Image!-->
 						<div class="doctor-profile">
-								<div class="doctor-img">
-									<img src="images/team/1.jpg" alt="doctor-image" class="img-fluid w-100">
-								</div>
-							</div>
-							
-							<!--Display Doctor Details!-->
-							<div class="content mt-3">
-								<h4 class="mb-0"><a href="{{ route('doctorSingle',$doctors->email) }}">{{ $doctors->doctorname}}</a></h4>
-								<p>{{ $doctors->speciality}}</p>
+							<div class="doctor-img">
+								<img src="images/team/1.jpg" alt="doctor-image" class="img-fluid w-100">
 							</div>
 						</div>
+
+						<!--Display Doctor Details!-->
+						<div class="content mt-3">
+							<h4 class="mb-0"><a href="{{ route('doctorSingle',$doctors->email) }}">{{ $doctors->doctorname}}</a></h4>
+							<p>{{ $doctors->speciality}}</p>
+						</div>
 					</div>
-					@endforeach
+				</div>
+				@endforeach
 			</div>
 		</div>
 	</section>

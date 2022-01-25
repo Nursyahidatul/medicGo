@@ -79,37 +79,30 @@
   </section>
 
   <section class="section doctors">
+
     <div class="container">
       <div class="row justify-content-center">
-        <table id ="confirm" style="border: 1px solid black; width: 100%">
+        <table id="confirm" style="border: 1px solid black; width: 100%">
           <tr>
-            <th style="border: 1px solid black; text-align: center">Patient Name</th>
-            <th style="border: 1px solid black; text-align: center">Prescription</th>
-            <th style="border: 1px solid black; text-align: center">Valid until</th>
-            <th style="border: 1px solid black; text-align: center">QR code</th>
-            <th style="border: 1px solid black; text-align: center">Generated</th>
+            <th style="border: 1px solid black; text-align: center">Date</th>
+            <th style="border: 1px solid black; text-align: center">AppointmentID</th>
+            <th style="border: 1px solid black; text-align: center">Details</th>
           </tr>
           @foreach($prescriptions as $prescriptions)
-          <tr>
-            <td style="border: 1px solid black;">{{ $data->patientname }}</td>
-            <td style="border: 1px solid black;">{{ $prescriptions->prescription }}</td>
-            <td style="border: 1px solid black;">{{ $prescriptions->validation }}</td>
-            <td style="border: 1px solid black;">{{ $qrcode }}</td>
-            <td>
-              <a class="btn btn-main btn-round-full" href="qr-code">Generate Qr<i class="icofont-simple-right ml-2"></i></a>
-            </td>
-          </tr>
+          <form action="{{ asset('saveqrcode') }}" method="post">
+            @csrf
+            <input class="special" type="hidden" name="prescriptionID" value="{{$prescriptions->id}}">
+            <input class="special" type="hidden" name="appointmentID" value="{{$prescriptions->appointmentID}}">
+            <tr>
+              <td style="border: 1px solid black;">{{$prescriptions->date}}</td>
+              <td style="border: 1px solid black;">{{$prescriptions->appointmentID}}</td>
+              <td><button class="btn btn-block btn-primary" type="submit">View details</button></td>
+            </tr>
+          </form>
           @endforeach
           <br>
         </table>
       </div>
-      <form id="#" class="appoinment-form" method="post" action="#"></form>
-
-      </form>
-
-    </div>
-    </div>
-    </div>
     </div>
   </section>
 

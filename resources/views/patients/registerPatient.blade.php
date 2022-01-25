@@ -84,7 +84,7 @@
           </div>
 
           <div class="form-group">
-            <label for="DOB">Date Of Birth</label>
+            <label for="DOB">Date Of Birth (year only)</label>
             <input type="int" class="form-control" placeholder="Enter Date Of Birth" name="DOB" value="{{old('DOB')}}">
             <span class="text-danger">@error('DOB') {{$message}} @enderror</span>
           </div>
